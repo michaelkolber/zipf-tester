@@ -6,13 +6,7 @@ verses = []
 verses_by_word = []
 
 with open('output_no_extra.txt') as output_file:
-    output = output_file.read()
-    verses = re.split(r'\n', output)
-    for verse in verses:
-        verses_by_word.append(re.split(r' |־', verse))
-    
-    longest_verse = [0,0]
-    current_verse = 0
+    output = out= 0
     for verse in verses:
         if len(verse) > len(verses[longest_verse[0]]):
             longest_verse[1] = longest_verse[0]
