@@ -1,2 +1,2 @@
 # Zipf Tester
-A program to visualize Zipf's law within documents.
+A program to help visualize Zipf's law within documents.
