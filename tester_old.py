@@ -6,17 +6,9 @@ import csv
 verses = []
 verses_by_word = []
 
-corpus_path = str(raw_input('Please enter the full path to the file you wish to test: '))
-
-with open(corpus_path) as corpus_file:
-    output = open('output.csv', 'wb')
-    output_logger = csv.writer(output, delimiter=',')
-    output_logger.writerow(['Word', 'Count'])
+with open(input('Please enter the full path to the file you wish to test: ')) as corpus_file:
     corpus = corpus_file.read()
-    for line in corpus:
-        words = re.split(' |-', line)
-        
-        verses = re.split(r'\n', output)
+    verses = re.split(r'\n', output)
     for verse in verses:
         verses_by_word.append(re.split(r' |־', verse))
     
